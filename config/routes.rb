@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get 'restaurants', to: 'restaurants#index'
+  post 'restaurants', to: 'restaurants#create'
+  get 'restaurants/:id', to: 'restaurant#show'
+  get 'restaurants/new', to: 'restaurants#new'
 end
